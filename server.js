@@ -7,12 +7,12 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.use(require('./routes'));
 
 //tells mongoose what database we want to connect to
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/noSQL-socialNetwork', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
 //   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
