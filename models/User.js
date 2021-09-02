@@ -14,14 +14,14 @@ const UserSchema = new Schema(
             required: " Please provide email!",
             unique: true,
             match: /.+\@.+\..+/, //Regex for email validation
-            thoughts: [
-                {
-                    //mongoose will expect an ObjectId and that the data comes from the Though Model.
-                    type: Schema.Types.ObjectId,
-                    ref: 'Thought'
-                }
-            ]
         },
+        thoughts: [
+            {
+                //mongoose will expect an ObjectId and that the data comes from the Though Model.
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+        ],
         friends: [
             {
                 //expect an ObjectId and a self reference of the user model
