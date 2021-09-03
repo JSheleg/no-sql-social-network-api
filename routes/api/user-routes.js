@@ -19,7 +19,7 @@ router
     .get(getAllUsers)
     .post(createUser)
  
-    
+//all routes at /api/users/:id    
 router
     .route('/:id')
     .get(getUserById)
