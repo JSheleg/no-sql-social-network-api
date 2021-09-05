@@ -58,4 +58,10 @@ This project is licensed under MIT
 
 ## Walk Through
 
-* WalkThrough: [Local_Machine_WalkThrough]()
+* UsersRoot: [/users](https://drive.google.com/file/d/1u_JBjPFvzul7EG9L3NPh2HdY9Uw39GeC/view)
+* UsersById[/users/:id](https://drive.google.com/file/d/1_fmPGJxCx7Ikk3Icb3vz-ZyT2eUQCot6/view)
+* UserFriends[/users/:id/friends/:friendsId](https://drive.google.com/file/d/1bK9czgnNBouy-9b4BFGISvzvKOy08m07/view)
+* ThoughtRoot[/thoughts](https://drive.google.com/file/d/1WBGun61D7AjndQ6V82n1EFSGk2cfagPF/view)
+* ThoughtsById[/thoughts/:id](https://drive.google.com/file/d/1Sf9Q198O0WaIIqSul6bELbPoLK7xACQL/view)
+* CreateReaction[thoughts/:thoughtId/reactions](https://drive.google.com/file/d/1wJg-sTLDJJK2Q0lN5jXP_bHvDjPwEFpf/view)
+* DeleteReaction[/thoughts/:thoughtId/reactions/:reactionId](https://drive.google.com/file/d/1hzXHr66hNjLoLiJBq6zFPOTap9FlvC1Z/view)
