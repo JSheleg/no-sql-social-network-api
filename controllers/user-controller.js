@@ -74,9 +74,11 @@ const userController = {
 
     //add friend
     addFriend({ params}, res){
+        console.log(params)
         User.findOneAndUpdate(
+            
             {_id: params.id},
-            {$addToSet: { friends: params.id}},
+            {$addToSet: { friends: params.friendId}},
             {new: true}
         )
         .then((dbUserData) => res.json(dbUserData))
@@ -87,7 +89,7 @@ const userController = {
     deleteFriend({ params }, res) {
         User.findByIdAndUpdate(
             { _id: params.id },
-            { $pull: { friends: params.id } },
+            { $pull: { friends: params.friendId } },
             { new: true, runValidators: true }
         )
             .select("-__v")
